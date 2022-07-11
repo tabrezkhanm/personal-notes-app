@@ -1,0 +1,31 @@
+<%- include("partials/header") -%>
+
+
+<h1>Compose</h1>
+<form action="/compose" method="post">
+   <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-default">Title</span>
+  </div>
+  <input type="text" class="form-control" name="authorName" aria-label="Default" aria-describedby="inputGroup-sizing-default" required="true">
+</div>
+ 
+ 
+ <div class="form-group">
+  <label for="comment">Content:</label>
+  <textarea class="form-control" rows="7" id="comment" name="content" required="true"></textarea>
+</div>
+ 
+ 
+ <button type="submit" class="btn btn-primary">Submit</button>
+ 
+ 
+</form>
+
+
+
+
+
+
+
+<%-include("partials/footer") -%>

@@ -1,0 +1,20 @@
+<%- include("partials/header.ejs") -%>
+
+
+<% for (var i =0 ; i<authorList.length ; i++){ %>
+   <h1><%=authorList[i]%></h1>
+    <p><%=composeDate[i]%><p>
+    <p class="lead"><%=contentList[i]%></p>
+    
+    
+    
+<%}%>
+
+
+<form action="/" method="post">
+    <button type="submit" class="btn btn-primary">New Post</button>
+</form>
+
+
+
+<%- include("partials/footer.ejs") -%>
